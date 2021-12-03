@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  justify-content: center;
+  align-items: center;
+  color: hsla(0, 0%, 100%, 0.75);
+  width: 100%;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.7em;
+  margin-bottom: 1.3rem;
+  color: hsl(0, 0%, 95%);
+}
+
+p {
+  line-height: 2em;
+  margin-bottom: 5rem;
+}
+
+button {
+  border-radius: 30px;
+  border: none;
+  padding: 0.8rem;
+  width: 150px;
+  color: inherit;
+  font-weight: 500;
+  font-size: 1.1em;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.sedans-card button {
+  color: hsl(31, 77%, 52%);
+}
+
+.suvs-card button {
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury-card button {
+  color: hsl(179, 100%, 13%);
+}
+
+.sedans-card {
+  background-color: hsl(31, 77%, 52%);
+  margin: 2rem 1.2rem 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 3.1rem;
+  max-width: 350px;
+}
+
+.cards-container div div img {
+  margin: 0 0 2rem 0;
+}
+
+.suvs-card {
+  background-color: hsl(184, 100%, 22%);
+  margin: 0 1.2rem;
+  padding: 3.1rem;
+  max-width: 350px;
+}
+
+.luxury-card {
+  background-color: hsl(179, 100%, 13%);
+  margin: 0 1.2rem 2rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 3.1rem;
+  max-width: 350px;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  }
+  .cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  .sedans-card {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+    margin: 0;
+  }
+  .suvs-card {
+    margin: 0;
+  }
+  .luxury-card {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+    margin: 0;
+  }
+}
